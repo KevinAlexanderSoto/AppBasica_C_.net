@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.Label();
+            this.txtSalarioBasicoHora = new System.Windows.Forms.Label();
+            this.txtSalarioBruto = new System.Windows.Forms.Label();
+            this.txtNumHorasTrabajadas = new System.Windows.Forms.Label();
+            this.txtHorasExtras = new System.Windows.Forms.Label();
+            this.txtSubsidio = new System.Windows.Forms.Label();
+            this.txtSalrioNeto = new System.Windows.Forms.Label();
+            this.txtValorHoraExtra = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -51,135 +51,137 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(181, 114);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.Size = new System.Drawing.Size(528, 23);
             this.textBox1.TabIndex = 0;
             // 
-            // label1
+            // txtTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(415, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.txtTitle.AutoSize = true;
+            this.txtTitle.Location = new System.Drawing.Point(415, 27);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(50, 15);
+            this.txtTitle.TabIndex = 1;
+            this.txtTitle.Text = "Nómina";
+            this.txtTitle.UseWaitCursor = true;
             // 
-            // label2
+            // txtName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(92, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.txtName.AutoSize = true;
+            this.txtName.Location = new System.Drawing.Point(92, 119);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(51, 15);
+            this.txtName.TabIndex = 2;
+            this.txtName.Text = "Nombre";
             // 
-            // label3
+            // txtSalarioBasicoHora
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(88, 163);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.txtSalarioBasicoHora.AutoSize = true;
+            this.txtSalarioBasicoHora.Location = new System.Drawing.Point(92, 163);
+            this.txtSalarioBasicoHora.Name = "txtSalarioBasicoHora";
+            this.txtSalarioBasicoHora.Size = new System.Drawing.Size(108, 15);
+            this.txtSalarioBasicoHora.TabIndex = 3;
+            this.txtSalarioBasicoHora.Text = "Salario Básico Hora";
             // 
-            // label4
+            // txtSalarioBruto
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(90, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.txtSalarioBruto.AutoSize = true;
+            this.txtSalarioBruto.Location = new System.Drawing.Point(92, 212);
+            this.txtSalarioBruto.Name = "txtSalarioBruto";
+            this.txtSalarioBruto.Size = new System.Drawing.Size(74, 15);
+            this.txtSalarioBruto.TabIndex = 4;
+            this.txtSalarioBruto.Text = "Salario Bruto";
             // 
-            // label5
+            // txtNumHorasTrabajadas
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(423, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.txtNumHorasTrabajadas.AutoSize = true;
+            this.txtNumHorasTrabajadas.Location = new System.Drawing.Point(392, 168);
+            this.txtNumHorasTrabajadas.Name = "txtNumHorasTrabajadas";
+            this.txtNumHorasTrabajadas.Size = new System.Drawing.Size(158, 15);
+            this.txtNumHorasTrabajadas.TabIndex = 5;
+            this.txtNumHorasTrabajadas.Text = "Numero de Horas trabajadas";
             // 
-            // label6
+            // txtHorasExtras
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(97, 300);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 15);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.txtHorasExtras.AutoSize = true;
+            this.txtHorasExtras.Location = new System.Drawing.Point(97, 300);
+            this.txtHorasExtras.Name = "txtHorasExtras";
+            this.txtHorasExtras.Size = new System.Drawing.Size(72, 15);
+            this.txtHorasExtras.TabIndex = 6;
+            this.txtHorasExtras.Text = "Horas Extras";
             // 
-            // label7
+            // txtSubsidio
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(97, 346);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 15);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label7";
+            this.txtSubsidio.AutoSize = true;
+            this.txtSubsidio.Location = new System.Drawing.Point(59, 350);
+            this.txtSubsidio.Name = "txtSubsidio";
+            this.txtSubsidio.Size = new System.Drawing.Size(110, 15);
+            this.txtSubsidio.TabIndex = 7;
+            this.txtSubsidio.Text = "Subsidio Transporte";
+            this.txtSubsidio.Click += new System.EventHandler(this.txtSubsidio_Click);
             // 
-            // label8
+            // txtSalrioNeto
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(96, 396);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 15);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "label8";
+            this.txtSalrioNeto.AutoSize = true;
+            this.txtSalrioNeto.Location = new System.Drawing.Point(96, 396);
+            this.txtSalrioNeto.Name = "txtSalrioNeto";
+            this.txtSalrioNeto.Size = new System.Drawing.Size(71, 15);
+            this.txtSalrioNeto.TabIndex = 8;
+            this.txtSalrioNeto.Text = "Salario Neto";
             // 
-            // label9
+            // txtValorHoraExtra
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(408, 301);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 15);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "label9";
+            this.txtValorHoraExtra.AutoSize = true;
+            this.txtValorHoraExtra.Location = new System.Drawing.Point(423, 301);
+            this.txtValorHoraExtra.Name = "txtValorHoraExtra";
+            this.txtValorHoraExtra.Size = new System.Drawing.Size(91, 15);
+            this.txtValorHoraExtra.TabIndex = 9;
+            this.txtValorHoraExtra.Text = "Valor Hora Extra";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 166);
+            this.textBox2.Location = new System.Drawing.Point(206, 160);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(8, 23);
+            this.textBox2.Size = new System.Drawing.Size(157, 23);
             this.textBox2.TabIndex = 10;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 205);
+            this.textBox3.Location = new System.Drawing.Point(206, 204);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(8, 23);
+            this.textBox3.Size = new System.Drawing.Size(157, 23);
             this.textBox3.TabIndex = 11;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(478, 167);
+            this.textBox4.Location = new System.Drawing.Point(570, 163);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(218, 23);
+            this.textBox4.Size = new System.Drawing.Size(139, 23);
             this.textBox4.TabIndex = 12;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(456, 294);
+            this.textBox5.Location = new System.Drawing.Point(539, 297);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(253, 23);
+            this.textBox5.Size = new System.Drawing.Size(170, 23);
             this.textBox5.TabIndex = 13;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(135, 300);
+            this.textBox6.Location = new System.Drawing.Point(181, 298);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(158, 23);
             this.textBox6.TabIndex = 14;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(140, 349);
+            this.textBox7.Location = new System.Drawing.Point(181, 347);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(157, 23);
             this.textBox7.TabIndex = 15;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(139, 395);
+            this.textBox8.Location = new System.Drawing.Point(179, 396);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(159, 23);
             this.textBox8.TabIndex = 16;
@@ -194,15 +196,15 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtValorHoraExtra);
+            this.Controls.Add(this.txtSalrioNeto);
+            this.Controls.Add(this.txtSubsidio);
+            this.Controls.Add(this.txtHorasExtras);
+            this.Controls.Add(this.txtNumHorasTrabajadas);
+            this.Controls.Add(this.txtSalarioBruto);
+            this.Controls.Add(this.txtSalarioBasicoHora);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -214,15 +216,15 @@
         #endregion
 
         private TextBox textBox1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
+        private Label txtTitle;
+        private Label txtName;
+        private Label txtSalarioBasicoHora;
+        private Label txtSalarioBruto;
+        private Label txtNumHorasTrabajadas;
+        private Label txtHorasExtras;
+        private Label txtSubsidio;
+        private Label txtSalrioNeto;
+        private Label txtValorHoraExtra;
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;

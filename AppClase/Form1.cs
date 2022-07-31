@@ -16,5 +16,10 @@ namespace AppClase
         {
 
         }
+
+        private void txtSubsidio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
