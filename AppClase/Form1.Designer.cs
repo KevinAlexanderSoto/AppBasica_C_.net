@@ -57,9 +57,10 @@
             // txtTitle
             // 
             this.txtTitle.AutoSize = true;
-            this.txtTitle.Location = new System.Drawing.Point(415, 27);
+            this.txtTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTitle.Location = new System.Drawing.Point(369, 27);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(50, 15);
+            this.txtTitle.Size = new System.Drawing.Size(72, 21);
             this.txtTitle.TabIndex = 1;
             this.txtTitle.Text = "Nómina";
             this.txtTitle.UseWaitCursor = true;
